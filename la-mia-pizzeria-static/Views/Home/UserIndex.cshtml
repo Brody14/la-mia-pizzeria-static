@@ -44,22 +44,22 @@
 
 
     <main>
-        @* Una pizza avrà le seguenti informazioni :
-        un nome
-        una descrizione
-        una foto (url)
-        un prezzo *@
 
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-
-                    <h1 class="my-5">Pizze</h1>
-
+        <div class="banner p-5">
+            <div class="container p-3">
+                <div class="col-5 text-center p-5 text-white">
+                    <h2 class="p-3 ">Pizza Obradovic</h2>
+                    <p>Con sei varianti di peperoncino per raggiungere lo stesso colore del viso del Coach quando perdi contro l'Efes</p>
+                    <button type="button" class="btn btn-danger">Ordina ora</button>
                 </div>
             </div>
         </div>
-        <div class="container mb-5">
+
+        <div class="container p-4">
+            <h2 class="fw-bold">Le nostre pizze</h2>
+        </div>
+
+        <div class="container mb-5 mt-3">
             <div class="row flex-wrap">
                 <div class="col-lg-3 col-md-6">
                     <div class="card">
@@ -107,7 +107,55 @@
             </div>
         </div>
 
+        <div class="container mb-5">
+        <div class="row flex-wrap">
+            <div class="col-lg-3 col-md-6">
+                <div class="card">
+                    <img class="mx-auto border-bottom" width="304" height="203" src="~/img/Belgrade.jpg" alt="Pizza Belgrado">
+                    <div class="card-body description">
+                        <h5 class="card-title">Pizza Belgrado</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                        <p>10&euro;</p>
+                    </div>
+                </div>
+            </div>
 
+            <div class="col-lg-3 col-md-6">
+                <div class="card">
+                    <img class="mx-auto border-bottom" width="304" height="203" src="~/img/avramovic.jpg" alt="Pizza Avramovic">
+                    <div class="card-body description">
+                        <h5 class="card-title">Pizza Avramovic</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                        <p>11&euro;</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="card">
+                    <img class="mx-auto border-bottom" width="304" height="203" src="~/img/smailagic.jpg" alt="Pizza Smailagic">
+                    <div class="card-body description">
+                        <h5 class="card-title">Pizza Smailagic</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                        <p>9&euro;</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="card">
+                    <img class="mx-auto border-bottom" width="304" height="203" src="~/img/obradovic.jpg" alt="Pizza Obradovic">
+                    <div class="card-body description">
+                        <h5 class="card-title">Pizza Obradovic</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                        <p>15&euro;</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    
 
     </main>
 
@@ -116,39 +164,39 @@
             <div class="row justify-content-center">
                 <div class="col-lg-5 col-md-12 mb-4 mb-md-0">
                     <a href="#"><img width="200" src="~/img/logowhite.png" alt="logo pizzeria"></a>
-                   <div class="mt-4">
+                    <div class="mt-4">
                         <ul class="list-unstyled d-flex mt-5 mb-0 ps-3">
-                        <li>
-                            <a href="" class="me-4 text-reset">
-                                <i class="fab fa-facebook-f fs-5"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" class="me-4 text-reset">
+                            <li>
+                                <a href="" class="me-4 text-reset">
+                                    <i class="fab fa-facebook-f fs-5"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="me-4 text-reset">
                                     <i class="fab fa-twitter fs-5"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" class="me-4 text-reset">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="me-4 text-reset">
                                     <i class="fab fa-google fs-5"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" class="me-4 text-reset">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="me-4 text-reset">
                                     <i class="fab fa-instagram fs-5"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" class="me-4 text-reset">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="me-4 text-reset">
                                     <i class="fab fa-linkedin fs-5"></i>
-                            </a>
-                        </li>
+                                </a>
+                            </li>
 
-                    </ul>
-                   </div>
-                  
+                        </ul>
+                    </div>
+
                 </div>
-        
+
                 <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
                     <h5>Contatti</h5>
                     <ul class="list-unstyled text-white">
@@ -156,7 +204,7 @@
                             <i class="fas fa-home"></i>
                             Bulevar Arsenija Čarnojevića 95, Beograd 11000, Serbia
                         </li>
-                        <li class ="lh-lg">
+                        <li class="lh-lg">
                             <i class="fas fa-phone"></i>
                             +381 621184511
                         </li>
@@ -182,18 +230,18 @@
                     <h5>Link</h5>
                     <ul class="list-unstyled text-white">
                         <li>
-                            <a href="/Home/UserIndex" class="me-4 text-reset text-decoration-none">
-                            Home
+                            <a href="" class="me-4 text-reset text-decoration-none">
+                                Home
                             </a>
                         </li>
                         <li>
                             <a href="" class="me-4 text-reset text-decoration-none">
-                            Privacy
+                                Privacy
                             </a>
                         </li>
                         <li>
                             <a href="" class="me-4 text-reset text-decoration-none">
-                            News
+                                News
                             </a>
                         </li>
                     </ul>
@@ -206,7 +254,7 @@
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
             <p class="mb-0"> ©2023 Grobari Pizza</p>
         </div>
-       
+
     </footer>
 
 
