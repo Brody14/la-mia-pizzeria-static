@@ -1,8 +1,175 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    Layout = null;
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blog Tech</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+
+<body>
+
+    <header>
+
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a href="#"><img width="200" src="~/img/logo.png" alt="logo pizzeria"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Privacy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">News</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+
+
+    <main>
+        @* Una pizza avrà le seguenti informazioni :
+        un nome
+        una descrizione
+        una foto (url)
+        un prezzo *@
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+
+                    <h1 class="my-5">Pizze</h1>
+
+                </div>
+            </div>
+        </div>
+        <div class="container mb-5">
+            <div class="row flex-wrap">
+                <div class="col-lg-3 col-md-6">
+                    <div class="card">
+                        <img class="mx-auto border-bottom" width="304" height="203" src="~/img/Belgrade.jpg" alt="Pizza Belgrado">
+                        <div class="card-body description">
+                            <h5 class="card-title">Pizza Belgrado</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                            <p>10&euro;</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="card">
+                        <img class="mx-auto border-bottom" width="304" height="203" src="~/img/avramovic.jpg" alt="Pizza Avramovic">
+                        <div class="card-body description">
+                            <h5 class="card-title">Pizza Avramovic</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                            <p>11&euro;</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="card">
+                        <img class="mx-auto border-bottom" width="304" height="203" src="~/img/smailagic.jpg" alt="Pizza Smailagic">
+                        <div class="card-body description">
+                            <h5 class="card-title">Pizza Smailagic</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                            <p>9&euro;</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="card">
+                        <img class="mx-auto border-bottom" width="304" height="203" src="~/img/obradovic.jpg" alt="Pizza Obradovic">
+                        <div class="card-body description">
+                            <h5 class="card-title">Pizza Obradovic</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                            <p>15&euro;</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </main>
+
+    <footer class="bg-dark text-white text-center text-lg-start">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <a href="#"><img width="200" src="~/img/logowhite.png" alt="logo pizzeria"></a>
+
+                </div>
+        
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5>Contatti</h5>
+                    <ul class="list-unstyled text-white">
+                        <li>
+                            Bulevar Arsenija Čarnojevića 95, Beograd 11000, Serbia
+                        </li>
+                        <li>
+                        +381 621184511
+                        </li>
+                        <li>
+                           info@grobaripizza.com
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5>Orari di apertura</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li class="text-white">
+                            Lun-Dom: 8:00 AM – 1:00 AM
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5>Link</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <a href="#!" class="text-white">Home</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Privacy</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">News</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            <p class="mb-0"> ©2023 Grobari Pizza</p>
+        </div>
+       
+    </footer>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+
+</html>
